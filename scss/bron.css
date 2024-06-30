@@ -1,0 +1,2918 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.countainer {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #FFF8DF;
+}
+
+.header-up {
+  background-color: #ffffff;
+}
+.header-up .menu {
+  justify-content: space-between;
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  padding: 8px 0px;
+}
+.header-up .menu .menu-left {
+  display: flex;
+  align-items: center;
+}
+.header-up .menu .menu-left .burger {
+  margin-left: 25px;
+}
+.header-up .menu .menu-left__item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+.header-up .menu .menu-left__item:nth-child(2) {
+  margin-left: 30px;
+}
+.header-up .menu .menu-left__item:nth-child(3) {
+  margin-left: 25px;
+}
+.header-up .menu .menu-left__item:nth-child(4) {
+  margin-left: 25px;
+}
+.header-up .menu .menu-left__item:hover {
+  color: #ED6D6B;
+}
+.header-up .menu .menu-right {
+  display: flex;
+  align-items: center;
+}
+.header-up .menu .menu-right .telephone {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.header-up .menu .menu-right .telephone__icon {
+  padding-right: 4px;
+}
+.header-up .menu .menu-right .telephone__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ed6d6b;
+  text-decoration: none;
+}
+.header-up .menu .menu-right .header-button {
+  display: flex;
+  align-items: center;
+}
+.header-up .menu .menu-right .header-button .button-all {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  border: 1px solid #005c98;
+  border-radius: 23px;
+  text-decoration: none;
+  background: #FFFFFF;
+  padding: 5px 10px;
+}
+.header-up .menu .menu-right .header-button .button-all__icon {
+  padding-right: 4px;
+}
+.header-up .menu .menu-right .header-button .button-all__btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #005c98;
+  text-decoration: none;
+}
+.header-up .menu .menu1-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.header-up .menu .menu1-btn span {
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ED6D6B;
+  transition: all 0.5s;
+}
+.header-up .menu .menu1-btn span:nth-of-type(2) {
+  top: calc(50% - 10px);
+}
+.header-up .menu .menu1-btn span:nth-of-type(3) {
+  top: calc(50% + 10px);
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+  .header-up .menu {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+  .header-up .menu {
+    max-width: 1150px;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header-up .menu {
+    max-width: 900px;
+    padding: 6px 0px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 85%;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 16px;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 15px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 15px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 12%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 16px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 3px 8px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    height: 23px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 90%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 16px;
+  }
+  .header-up .menu .menu1-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 10px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 10px);
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .header-up .menu {
+    max-width: 720px;
+    padding: 5px 0px;
+  }
+  .header-up .menu .menu-left__logo {
+    max-width: 65px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 14px;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 8px;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-right .telephone {
+    margin-right: 10px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 11%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 14px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 2px 7px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    max-width: 20px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 14px;
+  }
+  .header-up .menu .menu1-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 10px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 10px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 799px) {
+  .header-up .menu {
+    max-width: 700px;
+    padding: 4px 0px;
+  }
+  .header-up .menu .menu-left__logo {
+    max-width: 60px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 6px;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 13px;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-right .telephone {
+    margin-right: 10px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 10%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 13px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 2px 7px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    max-width: 19px;
+    max-height: 19px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 13px;
+  }
+  .header-up .menu .menu1-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 10px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 10px);
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .header-up .menu {
+    max-width: 580px;
+    padding: 4px 0px;
+  }
+  .header-up .menu .menu-left__logo {
+    max-width: 50px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 12px;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-right .telephone {
+    margin-right: 0px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 10%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 12px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 2px 7px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    max-width: 18px;
+    max-height: 19px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 12px;
+  }
+  .header-up .menu .menu1-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 10px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 10px);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .header-up .menu {
+    max-width: 440px;
+    padding: 6px 0px;
+    align-items: center;
+  }
+  .header-up .menu .menu-left__logo {
+    max-width: 90px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  .header-up .menu .menu-left .burger.show {
+    display: flex;
+    overflow: hidden;
+    z-index: 3;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left .burger.hide {
+    z-index: 3;
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 35px;
+    color: #FFFFFF;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-right .telephone {
+    display: none;
+    margin-right: 0px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 10%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 12px;
+  }
+  .header-up .menu .menu-right .header-button {
+    display: none;
+    left: 290px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 6px 9px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    max-width: 30px;
+    max-height: 25px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 20px;
+  }
+  .header-up .menu .menu-right .header-button.show {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 12px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 12px);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(1) {
+    display: none;
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 479px) {
+  .header-up .menu {
+    max-width: 390px;
+    padding: 6px 0px;
+    align-items: center;
+  }
+  .header-up .menu .menu-left__logo {
+    max-width: 90px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  .header-up .menu .menu-left .burger.show {
+    display: flex;
+    overflow: hidden;
+    z-index: 3;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left .burger.hide {
+    z-index: 3;
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 35px;
+    color: #FFFFFF;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-right .telephone {
+    display: none;
+    margin-right: 0px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 10%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 12px;
+  }
+  .header-up .menu .menu-right .header-button {
+    display: none;
+    left: 290px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 6px 9px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    max-width: 30px;
+    max-height: 25px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 20px;
+  }
+  .header-up .menu .menu-right .header-button.show {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 12px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 12px);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(1) {
+    display: none;
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .header-up .menu {
+    max-width: 330px;
+    padding: 6px 0px;
+    align-items: center;
+  }
+  .header-up .menu .menu-left__logo {
+    max-width: 90px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  .header-up .menu .menu-left .burger.show {
+    display: flex;
+    overflow: hidden;
+    z-index: 3;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left .burger.hide {
+    z-index: 3;
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 35px;
+    color: #FFFFFF;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-right .telephone {
+    display: none;
+    margin-right: 0px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 10%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 12px;
+  }
+  .header-up .menu .menu-right .header-button {
+    display: none;
+    left: 290px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 6px 9px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    max-width: 30px;
+    max-height: 25px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 20px;
+  }
+  .header-up .menu .menu-right .header-button.show {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 12px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 12px);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(1) {
+    display: none;
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .header-up .menu {
+    max-width: 295px;
+    padding: 6px 0px;
+    align-items: center;
+  }
+  .header-up .menu .menu-left__logo {
+    max-width: 90px;
+  }
+  .header-up .menu .menu-left__logo .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-left .burger {
+    margin-left: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  .header-up .menu .menu-left .burger.show {
+    display: flex;
+    overflow: hidden;
+    z-index: 3;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left .burger.hide {
+    z-index: 3;
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  .header-up .menu .menu-left__item {
+    font-size: 35px;
+    color: #FFFFFF;
+  }
+  .header-up .menu .menu-left__item:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(3) {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .header-up .menu .menu-left__item:nth-child(4) {
+    margin-left: 10px;
+  }
+  .header-up .menu .menu-right .telephone {
+    display: none;
+    margin-right: 0px;
+  }
+  .header-up .menu .menu-right .telephone__icon {
+    width: 10%;
+  }
+  .header-up .menu .menu-right .telephone__number {
+    font-size: 12px;
+  }
+  .header-up .menu .menu-right .header-button {
+    display: none;
+    left: 290px;
+  }
+  .header-up .menu .menu-right .header-button .button-all {
+    padding: 6px 9px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon {
+    max-width: 30px;
+    max-height: 25px;
+    padding-right: 0px;
+  }
+  .header-up .menu .menu-right .header-button .button-all__icon .logo {
+    width: 100%;
+  }
+  .header-up .menu .menu-right .header-button .button-all__btn {
+    font-size: 20px;
+  }
+  .header-up .menu .menu-right .header-button.show {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .header-up .menu .menu1-btn span {
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ED6D6B;
+    transition: all 0.5s;
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(2) {
+    top: calc(50% - 12px);
+  }
+  .header-up .menu .menu1-btn span:nth-of-type(3) {
+    top: calc(50% + 12px);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(1) {
+    display: none;
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  .header-up .menu .menu1-btn span.show:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0.9;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.booking {
+  margin-top: 60px;
+}
+.booking .filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background-color: #fff;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  max-width: 1420px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.booking .filter__type {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  padding-right: 0px;
+  border-radius: 20px;
+  border-right: 13px solid transparent !important;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+}
+.booking .filter__country {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  padding-right: 4px;
+  border-radius: 20px;
+  border-right: 13px solid transparent !important;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+}
+.booking .filter__townotpr {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  padding-right: 4px;
+  border-radius: 20px;
+  border-right: 13px solid transparent !important;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+}
+.booking .filter__townprib {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  padding-right: 4px;
+  border-radius: 20px;
+  border-right: 13px solid transparent !important;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+}
+.booking .filter__dateotpr {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  border-radius: 20px;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+  max-width: 150px;
+}
+.booking .filter__dateprib {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  border-radius: 20px;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+  max-width: 153px;
+}
+.booking .filter__mesta {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  padding-right: 4px;
+  border-radius: 20px;
+  border-right: 13px solid transparent !important;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+}
+.booking .filter__cena {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 13px;
+  padding-right: 4px;
+  border-radius: 20px;
+  border-right: 13px solid transparent !important;
+  outline: 1px solid #000; /* Добавляем 13px правую обводку */
+  cursor: pointer;
+}
+.booking .filter__btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding-right: 25px;
+  background: url("../public/search1.svg") no-repeat right;
+  background-size: 16px;
+  padding: 10px 20px;
+  padding-left: 13px;
+  border-radius: 20px;
+  background-color: #005C98;
+  border-right: 11px solid transparent;
+  cursor: pointer;
+}
+.booking .catalog-cards {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.booking .catalog-cards .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 345px);
+  width: 100%;
+  max-width: 1440px;
+  -moz-column-gap: 0px;
+  column-gap: 20px;
+  row-gap: 0px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.booking .catalog-cards .cards .card {
+  background-color: #fff;
+  border-radius: 20px;
+  max-width: 325px;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.booking .catalog-cards .cards .card__img {
+  display: flex;
+  width: 325px;
+  border-radius: 20px;
+  height: 197px;
+}
+.booking .catalog-cards .cards .card .card-place {
+  padding-top: 8px;
+  display: flex;
+}
+.booking .catalog-cards .cards .card .card-place__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000;
+}
+.booking .catalog-cards .cards .card .info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+}
+.booking .catalog-cards .cards .card .info__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.booking .catalog-cards .cards .card .info .block-stars {
+  max-width: 98px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.booking .catalog-cards .cards .card .info .block-stars__star {
+  max-width: 20%;
+}
+.booking .catalog-cards .cards .card__kolvo {
+  padding-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000;
+}
+.booking .catalog-cards .cards .card__timeotp {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000;
+  margin: 5px 0px;
+}
+.booking .catalog-cards .cards .card__timeprib {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000;
+}
+.booking .catalog-cards .cards .card__type {
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  padding: 4px 10px;
+  background: #005c98;
+  border-radius: 20px;
+  max-width: 33px;
+  display: flex;
+  justify-content: center;
+}
+.booking .catalog-cards .cards .card__minicena {
+  padding-top: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000;
+}
+.booking .catalog-cards .cards .card__cena {
+  padding-top: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #e57776;
+}
+.booking .catalog-cards .cards .card__btn {
+  position: absolute;
+  max-width: 325px;
+  width: 100%;
+  max-height: 413px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0%;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+  .booking .filter {
+    max-width: 719px;
+  }
+  .booking .filter__type {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__country {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townotpr {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townprib {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__dateotpr {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    height: 35px;
+    max-width: 136px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    height: 35px;
+    max-width: 142px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 1200px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 345px);
+    width: 100%;
+    max-width: 1200px;
+    -moz-column-gap: 0px;
+    column-gap: 20px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 20%;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 325px;
+    width: 100%;
+    max-height: 392px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+  .booking .filter {
+    max-width: 719px;
+  }
+  .booking .filter__type {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__country {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townotpr {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townprib {
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__dateotpr {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    height: 35px;
+    max-width: 136px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    height: 35px;
+    max-width: 142px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 1150px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 345px);
+    width: 100%;
+    max-width: 1150px;
+    -moz-column-gap: 0px;
+    column-gap: 30px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 20%;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 325px;
+    width: 100%;
+    max-height: 391px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .booking .filter {
+    max-width: 690px;
+  }
+  .booking .filter__type {
+    font-size: 14px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__country {
+    font-size: 14px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townotpr {
+    font-size: 14px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townprib {
+    font-size: 14px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 1px 10px;
+    height: 35px;
+    max-width: 106px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 1px 10px;
+    height: 35px;
+    max-width: 115px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 900px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    max-width: 900px;
+    -moz-column-gap: 0px;
+    column-gap: 20px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 250px;
+    padding: 1% 5px;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 240px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 11px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 80px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 240px;
+    width: 100%;
+    max-height: 385px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .booking {
+    margin-top: 30px;
+  }
+  .booking .filter {
+    max-width: 650px;
+  }
+  .booking .filter__type {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__country {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townotpr {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townprib {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 1px 10px;
+    width: 110px;
+    height: 35px;
+    max-width: 100px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    height: 35px;
+    width: 110px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 580px;
+    margin-bottom: 30px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    max-width: 580px;
+    -moz-column-gap: 0px;
+    column-gap: 30px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 250px;
+    padding: 1% 1.5%;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 240px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 11px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 80px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 325px;
+    width: 100%;
+    max-height: 413px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 799px) {
+  .booking {
+    margin-top: 30px;
+  }
+  .booking .filter {
+    max-width: 620px;
+  }
+  .booking .filter__type {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__country {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townotpr {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__townprib {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 1px 10px;
+    width: 110px;
+    height: 35px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    height: 35px;
+    width: 110px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 35px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 580px;
+    margin-bottom: 30px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    max-width: 580px;
+    -moz-column-gap: 0px;
+    column-gap: 30px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 250px;
+    padding: 1% 1%;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 245px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 11px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 80px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 245px;
+    width: 100%;
+    max-height: 385px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .booking {
+    margin-top: 30px;
+  }
+  .booking .filter {
+    max-width: 580px;
+    margin-bottom: 20px;
+  }
+  .booking .filter__type {
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+  }
+  .booking .filter__country {
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__townotpr {
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__townprib {
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 1px 10px;
+    width: 100px;
+    height: 30px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    height: 30px;
+    width: 100px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 580px;
+    margin-bottom: 30px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    max-width: 580px;
+    -moz-column-gap: 0px;
+    column-gap: 30px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 250px;
+    padding: 1% 1%;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 245px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 11px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 80px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 245px;
+    width: 100%;
+    max-height: 385px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .booking {
+    margin-top: 30px;
+  }
+  .booking .filter {
+    max-width: 420px;
+    margin-bottom: 20px;
+  }
+  .booking .filter__type {
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+  }
+  .booking .filter__country {
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__townotpr {
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__townprib {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 1px 10px;
+    width: 100px;
+    height: 30px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    height: 30px;
+    width: 100px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 440px;
+    margin-bottom: 30px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    width: 100%;
+    max-width: 440px;
+    -moz-column-gap: 0px;
+    column-gap: 10px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 210px;
+    padding: 1% 1%;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 207px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 14px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 58px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+    padding-bottom: 1px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 210px;
+    width: 100%;
+    max-height: 385px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 479px) {
+  .booking {
+    margin-top: 30px;
+  }
+  .booking .filter {
+    max-width: 380px;
+    margin-bottom: 20px;
+  }
+  .booking .filter__type {
+    font-size: 11px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+  }
+  .booking .filter__country {
+    font-size: 11px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__townotpr {
+    font-size: 11px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+  }
+  .booking .filter__townprib {
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 1px 10px;
+    padding-right: 0px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 11px;
+    margin-top: 10px;
+    padding: 1px 10px;
+    width: 90px;
+    height: 30px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 1px 10px;
+    height: 30px;
+    width: 90px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__btn {
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 18px;
+  }
+  .booking .catalog-cards {
+    max-width: 440px;
+    margin-bottom: 30px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    max-width: 440px;
+    -moz-column-gap: 0px;
+    column-gap: 10px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 250px;
+    padding: 3% 3%;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 235px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 14px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 58px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+    padding-bottom: 1px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 210px;
+    width: 100%;
+    max-height: 385px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .booking {
+    margin-top: 30px;
+  }
+  .booking .filter {
+    max-width: 191px;
+    margin-bottom: 20px;
+  }
+  .booking .filter__type {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+  }
+  .booking .filter__country {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__townotpr {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+    width: 200px;
+  }
+  .booking .filter__townprib {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    padding-right: 0px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    width: 200px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 1px 34px;
+    height: 30px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 28px;
+    height: 30px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    width: 200px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    width: 200px;
+  }
+  .booking .filter__btn {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 18px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .booking .catalog-cards {
+    max-width: 330px;
+    margin-bottom: 30px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    max-width: 330px;
+    -moz-column-gap: 0px;
+    column-gap: 10px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 250px;
+    padding: 3% 3%;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 235px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 14px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 58px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+    padding-bottom: 1px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 235px;
+    width: 100%;
+    max-height: 364px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .booking {
+    margin-top: 30px;
+  }
+  .booking .filter {
+    max-width: 191px;
+    margin-bottom: 20px;
+  }
+  .booking .filter__type {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+  }
+  .booking .filter__country {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+  }
+  .booking .filter__townotpr {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 0px;
+    width: 200px;
+  }
+  .booking .filter__townprib {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    padding-right: 0px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    width: 200px;
+  }
+  .booking .filter__dateotpr {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 1px 34px;
+    height: 30px;
+  }
+  .booking .filter__dateprib {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 28px;
+    height: 30px;
+  }
+  .booking .filter__mesta {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    width: 200px;
+  }
+  .booking .filter__cena {
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    width: 200px;
+  }
+  .booking .filter__btn {
+    font-size: 13px;
+    padding: 1px 10px;
+    border-right: 10px solid transparent !important;
+    height: 30px;
+    padding-right: 18px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .booking .catalog-cards {
+    max-width: 330px;
+    margin-bottom: 30px;
+  }
+  .booking .catalog-cards .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 210px);
+    width: 100%;
+    max-width: 330px;
+    -moz-column-gap: 0px;
+    column-gap: 10px;
+    row-gap: 0px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .booking .catalog-cards .cards .card {
+    max-width: 205px;
+    padding: 1% 1%;
+  }
+  .booking .catalog-cards .cards .card__img {
+    max-width: 207px;
+  }
+  .booking .catalog-cards .cards .card .card-place {
+    padding-top: 9px;
+  }
+  .booking .catalog-cards .cards .card .card-place__title {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card .info__title {
+    font-size: 14px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars {
+    max-width: 58px;
+  }
+  .booking .catalog-cards .cards .card .info .block-stars__star {
+    width: 18%;
+  }
+  .booking .catalog-cards .cards .card__kolvo {
+    padding-top: 6px;
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeotp {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__timeprib {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__type {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+  .booking .catalog-cards .cards .card__minicena {
+    font-size: 10px;
+  }
+  .booking .catalog-cards .cards .card__cena {
+    font-size: 17px;
+    padding-bottom: 1px;
+  }
+  .booking .catalog-cards .cards .card__btn {
+    position: absolute;
+    max-width: 205px;
+    width: 100%;
+    max-height: 382px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+.footer {
+  box-shadow: 0 -3px 3px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+.footer .footer-up {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+.footer .footer-up .footer-up-info .telephone {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-up .footer-up-info .telephone__icon {
+  padding-right: 4px;
+}
+.footer .footer-up .footer-up-info .telephone__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ed6d6b;
+  text-decoration: none;
+}
+.footer .footer-up .footer-up-info .icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 130px;
+  margin: 13px 0px;
+}
+.footer .footer-up .footer-up-info .curs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 189px;
+}
+.footer .footer-up .footer-up-info .curs__dollars {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+.footer .footer-up .footer-up-info .curs__euro {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+.footer .footer-down {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+  .footer .footer-up {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+  .footer .footer-up {
+    max-width: 1150px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .footer .footer-up {
+    max-width: 900px;
+    padding: 8px 0px;
+  }
+  .footer .footer-up__logo {
+    width: 13%;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 12%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 16px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 8px 0px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 90%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 16px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 16px;
+  }
+  .footer .footer-down {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .footer .footer-up {
+    max-width: 720px;
+    padding: 8px 0px;
+  }
+  .footer .footer-up__logo {
+    width: 18%;
+  }
+  .footer .footer-up .footer-up-info .telephone {
+    justify-content: space-between;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 11%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 14px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 13px 0px;
+  }
+  .footer .footer-up .footer-up-info .icons__item {
+    width: 27px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 14px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 14px;
+  }
+  .footer .footer-down {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 799px) {
+  .footer .footer-up {
+    max-width: 700px;
+    padding: 8px 0px;
+  }
+  .footer .footer-up__logo {
+    width: 18%;
+  }
+  .footer .footer-up .footer-up-info .telephone {
+    justify-content: space-between;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 11%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 14px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 13px 0px;
+  }
+  .footer .footer-up .footer-up-info .icons__item {
+    width: 27px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 14px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 14px;
+  }
+  .footer .footer-down {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .footer .footer-up {
+    max-width: 580px;
+    padding: 8px 0px;
+  }
+  .footer .footer-up__logo {
+    width: 18%;
+  }
+  .footer .footer-up .footer-up-info .telephone {
+    justify-content: space-between;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 11%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 14px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 13px 0px;
+  }
+  .footer .footer-up .footer-up-info .icons__item {
+    width: 27px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 14px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 14px;
+  }
+  .footer .footer-down {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .footer .footer-up {
+    max-width: 440px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up__logo {
+    width: 60%;
+  }
+  .footer .footer-up .footer-up-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up .footer-up-info .telephone {
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 10%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 6px 0px;
+    width: 160px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .icons__item {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 23px;
+    margin-left: 10px;
+  }
+  .footer .footer-down {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 479px) {
+  .footer .footer-up {
+    max-width: 390px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up__logo {
+    width: 60%;
+  }
+  .footer .footer-up .footer-up-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up .footer-up-info .telephone {
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 10%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 6px 0px;
+    width: 160px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .icons__item {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 23px;
+    margin-left: 10px;
+  }
+  .footer .footer-down {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .footer .footer-up {
+    max-width: 330px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up__logo {
+    width: 60%;
+  }
+  .footer .footer-up .footer-up-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up .footer-up-info .telephone {
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 10%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 6px 0px;
+    width: 160px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .icons__item {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 23px;
+    margin-left: 10px;
+  }
+  .footer .footer-down {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .footer .footer-up {
+    max-width: 295px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up__logo {
+    width: 60%;
+  }
+  .footer .footer-up .footer-up-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up .footer-up-info .telephone {
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .footer .footer-up .footer-up-info .telephone__icon {
+    width: 10%;
+  }
+  .footer .footer-up .footer-up-info .telephone__number {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .icons {
+    margin: 6px 0px;
+    width: 160px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .icons__item {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .footer-up .footer-up-info .icons__item .logo {
+    width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  .footer .footer-up .footer-up-info .curs__dollars {
+    font-size: 23px;
+  }
+  .footer .footer-up .footer-up-info .curs__euro {
+    font-size: 23px;
+    margin-left: 10px;
+  }
+  .footer .footer-down {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=bron.css.map */
