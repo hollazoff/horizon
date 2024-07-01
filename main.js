@@ -120,7 +120,6 @@ function toggleMenu() {
     menu.classList.remove('show');
     document.body.style.overflow = 'auto';
 
-    // Удаляем класс 'hide' после 1 секунды
     setTimeout(() => {
       menu.classList.remove('hide');
     }, 1000);
