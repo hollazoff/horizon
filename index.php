@@ -241,7 +241,7 @@ session_start();
             <input class="form__email" type="email" name="email" id="email" placeholder="Ваша почта"/>
 
             <?php 
-      $_email = $_SESSION["userinfo"]['email'];
+      @$_email = $_SESSION["userinfo"]['email'];
       $mysql=mysqli_connect('localhost','root','','horizon');
       $_provlog = mysqli_query($mysql,"SELECT * FROM `predlosh` WHERE `email` = '$_email' ");
       if(mysqli_num_rows($_provlog) >= 1){
