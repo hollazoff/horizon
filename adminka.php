@@ -170,7 +170,7 @@ elseif($_SESSION["userinfo"] ["email"] == "1"){
                                 $password =$_POST["password"];
                                 $trips = $_POST["trips"];
                                 $role = $_POST["role"];
-                                $sqlInsert = "UPDATE users                 SET name = '$name',                     surname = '$surname',                    email = '$email',                     number = '$number',                    password = '$password'                WHERE id_user = $usered";
+                                $sqlInsert = "UPDATE users                 SET name = '$name', surname = '$surname', email = '$email',  number = '$number', role = '$role',                    password = '$password'                WHERE id_user = $usered";
                                 $result=mysqli_query($mysql,$sqlInsert);
                                 header("Location: ./adminka.php");
                                 }
